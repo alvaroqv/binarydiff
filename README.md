@@ -17,11 +17,12 @@ For the purpose of this project I´m using Base64 encoding for the binary data. 
 - Default host: http://localhost:8080
 
 - This project is using Swagger documentation: 
-<host>/swagger-ui.html
-        
-or
 
+```sh
+<host>/swagger-ui.html   
+or
 <host>/v2/api-docs
+```
 
 Example: http://localhost:8080/swagger-ui.html
 
