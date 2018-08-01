@@ -15,9 +15,9 @@ This application is packaged as a war which has Tomcat 8 embedded. No Tomcat or 
 - You can build the project and run the tests by running mvn clean package
 
 ```sh
-$ cd dillinger
-$ npm install -d
-$ node app
+        java -jar -Dspring.profiles.active=test target/spring-boot-rest-example-0.5.0.war
+or
+        mvn spring-boot:run -Drun.arguments="spring.profiles.active=test"
 ```
 
 ## About the Service
