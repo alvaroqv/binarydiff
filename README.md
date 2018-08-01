@@ -1,2 +1,2 @@
 # binarydiff
-Example how to use SrpingBoot to send JSON base64 encoded binary data
+Example how to use SpringBoot to send and receive JSON base64 encoded binary data
