@@ -24,6 +24,8 @@ or
 
 <host>/v2/api-docs
 
+Example: http://localhost:8080/swagger-ui.html
+
 ### EndPoints
 Provide 2 http endpoints that accepts JSON base64 encoded binary data on both
 endpoints:
