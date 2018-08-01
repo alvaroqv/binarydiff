@@ -14,18 +14,14 @@ This application is packaged as a war which has Tomcat 8 embedded. No Tomcat or 
 - Make sure you are using JDK 1.8 and Maven 3.x
 - You can build the project and run the tests by running mvn clean package
 
-```sh
-        java -jar -Dspring.profiles.active=test target/spring-boot-rest-example-0.5.0.war
-or
-        mvn spring-boot:run -Drun.arguments="spring.profiles.active=test"
-```
-
 ## About the Service
+- Default host: http://localhost:8080
 
 - This project is using Swagger documentation: 
-
-<host>/swagger-ui.html#/file45diff45controller
+<host>/swagger-ui.html
+        
 or
+
 <host>/v2/api-docs
 
 ### EndPoints
@@ -39,8 +35,8 @@ endpoints:
 Accept: application/json
 Content-Type: application/json
 {
- "name": { type: "string" },
- "data": { type: "string" }
+  "data": "string",
+  "name": "string"
 }
 ```
   
@@ -52,11 +48,11 @@ GET <host>/filediff/api/v1/diff/{id}:
 Accept: application/json
 Content-Type: application/json
 {
- "fileId": { type: "string" },
- "filesAreEqual": { type: "string" },
- "sameSize": { type: "boolean" },
- "sizeFileLeft": { type: "integer" },
- "sizeFileRight": { type: "integer" },
+  "fileId": "string",
+  "filesAreEqual": true,
+  "sameSize": true,
+  "sizeFileLeft": 0,
+  "sizeFileRight": 0
 }
 ```
   
