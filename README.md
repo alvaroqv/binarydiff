@@ -4,11 +4,10 @@ This is a sample Java / Maven / Spring Boot (version 2.0.4) application.
 
 Example of how to use Spring Boot with RESTful web services to receive, compare and save JSON base64 encoded binary data.
 
-Project Objects: demonstrate how to use SpringBoot MicroSevice with RESTful web services to receive JSON base64 encoded binary data, compare the received files, response the difference and save the files for future verification.
+Project Goals: demonstrate how to use SpringBoot MicroSevice with RESTful web services to receive JSON base64 encoded binary data, compare the received files, response the difference and save the files for future verification.
 For the purpose of this project I´m using Base64 encoding for the binary data. Base64 encoding for the binary data, it is transformed into text   and then can be sent with an application/json content type as another property of the JSON payload. It is not at all efficient especially if you are dealing with low bandwidth and intermittent network, because the encoded binary data will increase the payload size.
 
 ## How to Run
-This application is packaged as a war which has Tomcat 8 embedded. No Tomcat or JBoss installation is necessary.
 
 - Clone this repository
 - Make sure you are using JDK 1.8 and Maven 3.x
@@ -57,4 +56,4 @@ Content-Type: application/json
   "sizeFileRight": 0
 }
 ```
-  
+The result shows if the files are equals or differences and it shows the files size.
